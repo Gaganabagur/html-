@@ -1,0 +1,435 @@
+<html>
+<head>
+<script LANGUAGE="JavaScript" type="text/javascript">
+
+function display() 
+{
+if(document.myform.name.value== "")
+{
+  alert ("please enter the name"); 
+}
+if(document.myform.email.value=="")
+{
+  alert ("please enter the email");
+}
+if(document.myform.subject.value== "")
+{
+  alert ("please enter the subject");
+}
+ //DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+  //message = "<ul><li><b>NAME: </b>" + document.myform.name.value;
+  //message += "<li><b>ADDRESS: </b>" + document.myform.email.value;
+  //message += "<li><b>PHONE: </b>" + document.myform.subject.value + "</ul>";
+  //DispWin.document.write(message);
+
+DispWin=window.open("",'NewWin','height=800 width=800')// ""--> specify the url here ***  window.open([URL], [Window Name], [Feature List], [Replace]);***  format to open a new window
+
+message="<li><b>NAME: </b><br>" + document.myform.name.value;
+message+="<li><b> EMAIL: </b><br>" + document.myform.email.value;
+message+="<li><b>SUBJECT: </b>"+document.myform.subject.value + "";
+DispWin.document.write(message);
+}
+</script>		
+</head>
+
+<style>
+.div1
+{
+width:100%;
+height:70px;
+background-color:#3A3A36;
+position:fixed;
+top:0;
+}
+
+.button1
+{
+border-bottom:5px;
+background-color:#3A3A36;
+width:125px;
+height:50px;
+border:none;
+color:white;
+font-style:bold;
+font-size:20px;
+float left;
+margin-left:675px;
+margin-top:10px;
+}
+
+.button2
+{
+border-bottom:5px;
+background-color:#3A3A36;
+width:125px;
+height:50px;
+border:none;
+color:white;
+font-style:bold;
+font-size:20px;
+float left;
+margin-left:25px;
+margin-top:10px;
+}
+
+.div2
+{
+padding-top:20px;
+margin-bottom:20px;
+text-align:center;
+text-align:bottom;
+font-size:30px;
+color:white;
+font-style:italic;
+width:100%;
+height:80% ;
+line-height:0.4;
+background-image:url(image1.jpg);
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.div3
+{
+width:25%;
+height:450px;
+background-color:#F6F6F6;
+margin-left:80px;
+float:left;
+}
+
+.button3
+{
+background-color:green;
+color:white;
+border:none;
+height:50px;
+border-radius: 10px;
+margin-left:100px;
+}
+
+.div4
+{
+width:25%;
+height:450px;
+background-color:#F6F6F6;
+margin-left:90px;
+float:left;
+}
+
+.div5
+{
+width:25%;
+height:450px;
+background-color:#F6F6F6;
+margin-left:90px;
+float:left;
+}
+
+.button4
+{
+background-color:#3BA4BC;
+color:white;
+border:none;
+height:50px;
+border-radius: 10px;
+margin-left:100px;
+}
+
+.button5{
+background-color:#B31D1D;
+color:white;
+border:none;
+height:50px;
+ border-radius: 10px;
+margin-left:100px;
+}
+
+.div6{
+width:40%;
+height:400px;
+background-color:#E0E0E0;
+float:left;
+margin-left:80px;
+margin-top:50px;
+margin-bottom:50px;
+
+}
+.div7
+{
+width:40%;
+height:400px;
+background-color:#E0E0E0;
+margin-left:80px;
+margin-top:50px;
+float:left;
+margin-bottom:50px;
+
+
+}
+.button6{
+background-color:white;
+border-color:grey;
+color:grey;
+color:grey;
+height:50px;
+margin-left:450px;
+border-radius:8px
+
+}
+
+.div8{
+width:120%;
+height:220px;
+margin-top:10px;
+color:white;
+float:left;
+align-items:center;
+justify-content:center;
+background-image:url(image7.jpg);
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.div9{
+width:15%;
+height:450px;
+margin-top:10px;
+color:white;
+float:left;
+background-color:D7D7D7;
+margin-left:250px;
+
+}
+
+.div10{
+width:15%;
+height:450px;
+margin-top:10px;
+color:white;
+float:left;
+background-color:D7D7D7;
+margin-left:70px;
+
+}
+.button7{
+margin-left:15px;
+height:40px;
+border:none;
+border-radius:8px;
+}
+
+
+.button8{
+margin-left:30px;
+height:40px;
+border:none;
+border-radius:8px;
+}
+
+.div11{
+width:74%;
+height:700px;
+margin-top:10px;
+color:white;
+float:left;
+background-color:D7D7D7;
+margin-left:250px;
+}
+
+.div12{
+margin-top:30px;
+background-image:url(image13.jpg);
+width:110%;
+height:700px;
+color:white;
+float:left;
+font-size:20px;
+text-align:center;
+}
+.las{
+float:right;
+width:70%;
+margin-right:200px;
+margin-bottom:30px;
+}
+
+.t2
+{
+ margin-left:500px;
+ float:left;
+ opacity: 0.4;
+ border-radius:5px;
+ }
+ 
+.t0{
+  opacity: 0.4;
+  border-radius:5px;
+}
+
+.finalbutton
+{
+background-color:black;
+color:white;
+border:none;
+width:8%;
+height:40px;
+border-radius:6px;
+}
+
+.t5{
+ opacity: 0.4;
+float:left;
+margin-left:20px;
+}
+
+
+.top{
+margin-top:150px;
+margin-right:50px;
+position:fixed;
+}
+
+
+
+</style>
+
+
+<body>
+
+<div class="div1"> 
+<a href="#div3a" ><button class="button1" > HomePage</button></a>
+<a href="#div4a" ><button class="button2" > AboutUs</button></a>
+<a href="#div5a"><button class="button2" > Services</button></a>
+<a href="#div6a"><button class="button2" > Contact</button></a>
+<button class="button2" > External</button>`
+</div>
+
+<div  id="div3a"  class= "div2" > 
+<h1> CONQUER </h1>
+<h3>Simple Bootstrap Template</h3>
+</div>
+
+
+<div class="div3">
+<img width="100%" height="200px" src="image2.jpg">
+<h5><font color="green" size="4px">Bootstrap v3.3.6</font></h5>
+<p>Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque.</p>
+<button class="button3">BUTTON GREEN</button>
+</div>
+
+
+<div id="div4a" class="div4" >
+<img width="100%" height="200px" src="image3.jpg">
+<h5><font color="blue" size="4px" align="center">Responsive Design</font></h5>
+<p>Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque.</p>
+<button class="button4">BUTTON GREEN</button>
+</div>
+
+<div class="div5">
+<img width="100%" height="200px" src="image4.jpg">
+<h5><font color="grey" size="4px">Parallax Layout</font></h5>
+<p>Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque.</p>
+<button class="button5" >BUTTON GREEN</button>
+</div>
+
+
+<div class="top">
+<img  style="float:right" src="top.png">
+</div>
+
+
+<div class="div6">
+<img width="100%" height="200px" src="image5.jpg">
+<h5><font color="blue" size="4px"> Responsive Design</font></h5>
+<p>Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque.</p>
+</div>
+
+<div class="div7">
+<img width="100%" height="200px" src="image6.jpg">
+<h5><font color="grey" size="4px"  >Parallax Layout</font></h5>
+<p>Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque.</p>
+<button class="button6"> READ MORE</button>
+</div>
+
+<div  id="div5a"  class="div8">
+<h5><font color="white" size="8px" text-align="center"> Our Services</font></h5>
+<p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. </p>
+<p>Sefelis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. 
+Etiam a mi quis arcu varius condimentum.</p>
+</div>
+
+<div class="div9">
+
+<img width="100%" height="200px" src="image8.jpg">
+<h5><font color="grey" size="4px"> Column One</font></h5>
+<p><font color="black" >Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque.</font></p>
+</div>
+
+<div class="div10">
+<img width="100%" height="200px" src="image9.jpg">
+<h5><font color="grey" size="4px">Column Two</font></h5>
+<p><font color="black" >Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque.</font></p>
+<button class="button7" > READ MORE</button>
+
+</div>
+<div class="div10">
+<img width="100%" height="200px" src="image10.jpg">
+<h5><font color="grey" size="4px">Column Three</font></h5>
+<p><font color="black" >Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque.</font></p>
+
+</div>
+
+<div class="div10">
+<img width="100%" height="200px" src="image11.jpg">
+<h5><font color="grey" size="4px">column four</font></h5>
+<p><font color="black" >Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque.</font></p>
+<button class="button8"  > READ MORE</button>
+</div>
+
+<div class="div11">
+<img width="100%" height="400px" src="image12.jpg">
+<h5><font color="grey" size="4px">Column Two</font></h5>
+<p><font color="black" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium. Vivamus dictum nisi ac fermentum interdum. Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus. Praesent volutpat cursus rhoncus. Aenean arcu diam, suscipit ac neque in, sollicitudin convallis orci.
+Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque quis, maximus eget nisi.
+</font></p>
+<button class="button7" > READ MORE</button>
+</div>
+
+<div  id="div6a" class="div12">
+<h5><font color="white" size="15px" align-items="center">Contact Form</font></h5>
+<p><font color="black" >Morbi sagittis justo a velit placerat ullamcorper quis quis velit.
+ Sed convallis at risus ullamcorper auctor. Praesent quis velit neque.
+ Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque.</font></p>
+
+<div class="t0">
+ <textarea rows="10" cols="80" >Morbi sagittis justo a velit placerat ullamcorper quis quis velit.
+ Sed convallis at risus ullamcorper auctor. Praesent quis velit neque.
+ Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque
+</textarea><br><br>
+</div>
+
+<div class="t2">
+<form name="myform">
+<input type="text" rows="2" cols="35"  name="name">name</input><br>
+<input type="text" rows="2" cols="35" name="email">Email</input><br>
+<input type="text" rows="2" cols="35" name="subject">subject</input>
+</form>
+</div>
+
+
+<div class="t5">
+<textarea rows="8" cols="30"></textarea><br><br>
+</div>
+<div class="las">
+<button class="finalbutton" onClick="display()">Send </button>
+</div>
+
+</div>
+</body>
+</html>
